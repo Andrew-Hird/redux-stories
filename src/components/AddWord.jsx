@@ -1,6 +1,6 @@
 import React from 'react'
-import {connect} from 'react-redux'
-import {addWord} from '../actions'
+import { connect } from 'react-redux'
+import { addWord } from '../actions'
 
 function submitWord (e, dispatch) {
   if (e.keyCode === 13) {
@@ -9,9 +9,9 @@ function submitWord (e, dispatch) {
   }
 }
 
-let AddWord = ({dispatch}) => (
+let AddWord = ({ dispatch }) => (
   <input
-    placeholder="Enter a word or phrase"
+    placeholder="Enter what you want"
     onKeyUp={e => {
       submitWord(e, dispatch)
     }}

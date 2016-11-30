@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react'
 
 const Word = ({word}) => (
-  <div>{word}</div>
+  <div>I want a {word}</div>
 )
 
 Word.propTypes = {

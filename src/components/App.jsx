@@ -5,8 +5,8 @@ import WordsContainer from '../containers/WordsContainer'
 
 const App = () => (
   <div className='app-container'>
-    <WordsContainer />
     <AddWord />
+    <WordsContainer />
   </div>
 )
 
