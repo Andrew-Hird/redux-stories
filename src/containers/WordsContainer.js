@@ -10,9 +10,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onClick: (id) => {
-      dispatch(deleteWord(id))
-    }
+    onClick: (id) => dispatch(deleteWord(id))
   }
 }
 
