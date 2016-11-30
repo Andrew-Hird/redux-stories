@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-
+import { deleteImage } from '../actions'
 import Images from '../components/Images'
 
 const mapStateToProps = (state) => {
@@ -8,6 +8,13 @@ const mapStateToProps = (state) => {
   }
 }
 
+const mapDispatchtoProps = (dispatch) => {
+  return {
+    onClick: (id) => dispatch(deleteImage(id))
+  }
+}
+
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchtoProps
 )(Images)

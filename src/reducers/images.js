@@ -1,12 +1,4 @@
-const images = (state = [
-  {
-    id: 0,
-    image: 'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx'
-  }, {
-    id: 1,
-    image: 'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/dog-medium-landing-hero.ashx'
-  }
-], action) => {
+const images = (state = [], action) => {
   switch (action.type) {
     case 'ADD_IMAGE':
       return [
@@ -15,6 +7,9 @@ const images = (state = [
           image: action.image
         }
       ]
+
+    case 'DELETE_IMAGE':
+      return state.filter(image => image.id !== action.id)
 
     default:
       return state

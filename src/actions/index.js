@@ -1,5 +1,5 @@
 let nextWordId = 0
-let nextImageId = 2
+let nextImageId = 0
 
 export const addWord = (word) => {
   return {

@@ -2,11 +2,12 @@ import React, { PropTypes } from 'react'
 
 import Image from './Image'
 
-const Images = ({ images }) => (
+const Images = ({ images, onClick }) => (
   <div>
     {images.map(image =>
       <Image
         key={image.id}
+        onClick={() => onClick(image.id)}
         {...image}
         />
     )}
@@ -19,7 +20,8 @@ Images.propTypes = {
       id: PropTypes.number.isRequired,
       image: PropTypes.string.isRequired
     }).isRequired
-  ).isRequired
+  ).isRequired,
+  onClick: PropTypes.func.isRequired
 }
 
 export default Images
