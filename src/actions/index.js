@@ -1,4 +1,4 @@
-let nextWordId = 3
+let nextWordId = 0
 let nextImageId = 0
 
 export const addWord = (word) => {

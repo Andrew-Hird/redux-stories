@@ -1,15 +1,4 @@
-const words = (state = [
-  {
-    id: 0,
-    word: 'cat'
-  }, {
-    id: 1,
-    word: 'dog'
-  }, {
-    id: 2,
-    word: 'frog'
-  }
-], action) => {
+const words = (state = [], action) => {
   switch (action.type) {
     case 'ADD_WORD':
       return [
