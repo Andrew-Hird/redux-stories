@@ -23,3 +23,10 @@ export const addImage = (image) => {
     image
   }
 }
+
+export const deleteImage = (id) => {
+  return {
+    type: 'DELETE_IMAGE',
+    id: id
+  }
+}
