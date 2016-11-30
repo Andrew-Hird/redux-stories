@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-
+import {deleteWord} from '../actions'
 import Words from '../components/Words'
 
 const mapStateToProps = (state) => {
@@ -8,6 +8,15 @@ const mapStateToProps = (state) => {
   }
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onClick: (id) => {
+      dispatch(deleteWord(id))
+    }
+  }
+}
+
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(Words)

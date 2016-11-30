@@ -1,4 +1,4 @@
-let nextWordId = 0
+let nextWordId = 3
 let nextImageId = 0
 
 export const addWord = (word) => {
@@ -6,6 +6,13 @@ export const addWord = (word) => {
     type: 'ADD_WORD',
     id: nextWordId++,
     word
+  }
+}
+
+export const deleteWord = (id) => {
+  return {
+    type: 'DELETE_WORD',
+    id: id
   }
 }
 

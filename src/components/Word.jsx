@@ -1,12 +1,15 @@
 import React, {PropTypes} from 'react'
 
-const Word = ({word}) => (
+const Word = ({word, onClick}) => (
   <div>
-  I want a {word}</div>
+    <button onClick={onClick}></button>
+    I want a {word}
+  </div>
 )
 
 Word.propTypes = {
-  word: PropTypes.string.isRequired
+  word: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
 }
 
 export default Word
