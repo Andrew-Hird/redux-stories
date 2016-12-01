@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { addWord } from '../actions'
 
@@ -21,3 +21,7 @@ let AddWord = ({ dispatch }) => (
 AddWord = connect()(AddWord)
 
 export default AddWord
+
+AddWord.propTypes = {
+  dispatch: PropTypes.func
+}
