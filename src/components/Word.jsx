@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react'
 
 const Word = ({word, onClick}) => (
   <div>
-    <button onClick={onClick}></button>
+    <button onClick={onClick}>x</button>
     I want a {word}
   </div>
 )

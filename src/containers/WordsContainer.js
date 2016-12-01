@@ -3,7 +3,7 @@ import { deleteWord } from '../actions'
 import Words from '../components/Words'
 
 const getVisibleList = (words, filter) => {
-  return words.filter(word => word.word.includes(filter))
+  return words.filter(w => w.word.includes(filter))
 }
 
 const mapStateToProps = (state) => {
