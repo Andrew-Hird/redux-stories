@@ -1,10 +1,14 @@
-import {connect} from 'react-redux'
-import {deleteWord} from '../actions'
+import { connect } from 'react-redux'
+import { deleteWord } from '../actions'
 import Words from '../components/Words'
+
+const getVisibleList = (words, filter) => {
+  return words.filter(word => word.word.includes(filter))
+}
 
 const mapStateToProps = (state) => {
   return {
-    words: state.words
+    words: getVisibleList(state.words, state.filter)
   }
 }
 

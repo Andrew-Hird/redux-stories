@@ -1,4 +1,4 @@
-let nextWordId = 0
+let nextWordId = 5
 let nextImageId = 0
 
 export const addWord = (word) => {
@@ -13,6 +13,13 @@ export const deleteWord = (id) => {
   return {
     type: 'DELETE_WORD',
     id: id
+  }
+}
+
+export const filterWords = (input) => {
+  return {
+    type: 'FILTER_WORDS',
+    input: input
   }
 }
 
