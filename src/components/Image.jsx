@@ -17,6 +17,7 @@ let Image = ({id, image, description, onClick, dispatch}) => (
       style={{height: 250}} />
       <input
         placeholder="Enter image description"
+        style={{display: description ? 'none' : ''}}
         onKeyUp={e => {
           submitDescription(e, id, dispatch)
         }}
