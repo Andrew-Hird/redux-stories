@@ -2,11 +2,16 @@ const images = (state = [
   {
     id: 0,
     image: 'http://dreamatico.com/data_images/kitten/kitten-3.jpg',
-    description: null
+    description: 'Meow'
   }, {
     id: 1,
     image: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg',
     description: null
+  },
+  {
+    id: 2,
+    image: 'http://www.cowparadesurreyhills.com/wp-content/uploads/2016/04/cowabunga-jenny-leonard.png',
+    description: 'cowabunga'
   }
 ], action) => {
   switch (action.type) {

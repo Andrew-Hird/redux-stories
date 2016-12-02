@@ -12,9 +12,19 @@ button {
 }
 
 .image-container {
+  margin 0: auto;
+  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .image {
   margin: 5px;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-radius: 50%;
 }

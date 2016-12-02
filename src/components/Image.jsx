@@ -14,7 +14,7 @@ let Image = ({id, image, description, onClick, dispatch}) => (
     <button onClick={onClick}>x</button>
     <img
       src={image}
-      style={{height: 200, width: 200}} />
+      className="img" />
       <br/>
       <input
         placeholder="Enter image description"
@@ -24,7 +24,7 @@ let Image = ({id, image, description, onClick, dispatch}) => (
         }}
         />
         <br/>
-    {description}
+    <em>{description}</em>
     <hr/>
   </div>
 )
