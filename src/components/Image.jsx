@@ -10,18 +10,20 @@ function submitDescription (e, id, dispatch) {
 }
 
 let Image = ({id, image, description, onClick, dispatch}) => (
-  <div>
+  <div className="image">
     <button onClick={onClick}>x</button>
     <img
       src={image}
-      style={{height: 250}} />
+      style={{height: 200, width: 200}} />
+      <br/>
       <input
         placeholder="Enter image description"
         style={{display: description ? 'none' : ''}}
         onKeyUp={e => {
           submitDescription(e, id, dispatch)
         }}
-        /> <br/>
+        />
+        <br/>
     {description}
     <hr/>
   </div>

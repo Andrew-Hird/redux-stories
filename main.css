@@ -10,3 +10,11 @@ button {
   height: 2rem;
   border-radius: 50%;
 }
+
+.image-container {
+  display: flex;
+}
+
+.image {
+  margin: 5px;
+}

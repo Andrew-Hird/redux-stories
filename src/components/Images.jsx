@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react'
 import Image from './Image'
 
 const Images = ({ images, onClick }) => (
-  <div>
+  <div className="image-container">
     {images.map(image =>
       <Image
         key={image.id}
