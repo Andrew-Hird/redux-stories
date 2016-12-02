@@ -1,5 +1,5 @@
 let nextWordId = 5
-let nextImageId = 0
+let nextImageId = 2
 
 export const addWord = (word) => {
   return {
@@ -28,6 +28,14 @@ export const addImage = (image) => {
     type: 'ADD_IMAGE',
     id: nextImageId++,
     image
+  }
+}
+
+export const addImageDescription = (description, id) => {
+  return {
+    type: 'ADD_IMAGE_DESCRIPTION',
+    id: id,
+    description
   }
 }
 

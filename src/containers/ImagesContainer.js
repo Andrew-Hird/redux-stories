@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import { deleteImage } from '../actions'
+
 import Images from '../components/Images'
 
 const mapStateToProps = (state) => {

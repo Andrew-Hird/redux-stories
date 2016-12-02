@@ -12,7 +12,9 @@ const App = () => (
     <AddWord />
     <FilterWords />
     <WordsContainer />
+    <hr/>
     <AddImage />
+    <hr/>
     <ImagesContainer />
   </div>
 )

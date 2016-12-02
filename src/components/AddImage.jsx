@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import { connect } from 'react-redux'
 import { addImage } from '../actions'
 
@@ -10,14 +10,20 @@ function submitImage (e, dispatch) {
 }
 
 let AddImage = ({ dispatch }) => (
-  <input
-    placeholder="Enter image url"
-    onKeyUp={e => {
-      submitImage(e, dispatch)
-    }}
-    />
+  <div>
+    <input
+      placeholder="Enter image url"
+      onKeyUp={e => {
+        submitImage(e, dispatch)
+      }}
+      />
+  </div>
 )
 
 AddImage = connect()(AddImage)
 
 export default AddImage
+
+AddImage.propTypes = {
+  dispatch: PropTypes.func
+}
